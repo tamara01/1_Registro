@@ -36,9 +36,9 @@
     			<input type="password" id="repassword" name="repassword" required=""> 
         
                <fieldset>
-                 <label>Fecha de Cumpleaños </label><br><br>
+                 <label>Fecha de Nacimiento... </label><br><br>
                   <label class="mes"> 
-                  <select class="select-style" name="BirthMonth">
+                  <select class="select-style" required=name="BirthMonth">
                   <option value="">Mes</option>
                   <option  value="01">Enero</option>
                   <option value="02">Febrero</option>
@@ -53,10 +53,12 @@
                   <option value="11">Noviembre</option>
                   <option value="12" >Diciembre</option>
                   </label>
-                 </select>    
-                <label>Dia<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Dia" required=""></label>
-                <label>Año <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Año" required=""></label>
-              </fieldset>
+                 </select> 
+
+                 <label>Dia<input type="number" name="dia" min="1" max="31" required="number"> </label>
+                 <label>Año<input type="number" name="mes" min="1920" max="2006" required="number"> </label>                
+                </fieldset> 
+                
 
               <p>Indique el lenguaje que más le guste...</p><br> 
               <input type="checkbox" name="Lenguaje" > C
@@ -81,8 +83,7 @@
             <input type="radio" name="rdio" value="No" > No<br>
 
             <input class="buttom" name="submit" id="submit" tabindex="5" value="Registrarse" type="submit"> 
-            <h5>Para más información ingrese a...</h5>
-            <a href="https://www.google.com.ar/">	Ayuda </a> 
+            <h5>Para más información ingrese a...</h5>     <a href="https://www.google.com.ar/">	Ayuda </a> 
    </form> 
   
 </body>
