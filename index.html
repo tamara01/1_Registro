@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" href=http://www.freshdesignweb.com/wp-content/themes/fv28/images/icon.ico />
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
     <link rel="stylesheet" type="text/css" href="fdw-demo.css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
@@ -36,10 +35,12 @@
     			<input type="password" id="repassword" name="repassword" required=""> 
         
                <fieldset>
-                 <label>Fecha de Nacimiento... </label><br><br>
+                <label> Fecha de Nacimiento... </label><br><br>
+                <label> Dia <input type="number" name="dia" min="1" max="31" required="number"  placeholder="1"> </label>
+
                   <label class="mes"> 
                   <select class="select-style" required=name="BirthMonth">
-                  <option value="">Mes</option>
+                  <option value=""> Mes </option>
                   <option  value="01">Enero</option>
                   <option value="02">Febrero</option>
                   <option value="03" >Marzo</option>
@@ -55,8 +56,7 @@
                   </label>
                  </select> 
 
-                 <label>Dia<input type="number" name="dia" min="1" max="31" required="number"> </label>
-                 <label>Año<input type="number" name="mes" min="1920" max="2006" required="number"> </label>                
+                 <label> Año <input type="number" name="mes" min="1920" max="2006" required="number"  placeholder="Año"> </label>                
                 </fieldset> 
                 
 
@@ -75,15 +75,16 @@
             <option value="others">Otro</option>
             </select><br><br>
             
-            <p class="contact"><label for="phone">Numero de Celular</label></p> 
-            <input id="phone" name="phone" placeholder="Numero de celular" required="" type="text"> <br>
+            <p class="contact"><label for="phone">Numero de Celular</label></p>
+            <input id="phone" name="phone" placeholder="Numero de celular" required="" type="text"> <br> 
+            <br>
 
             <p>Desea recibir las últimas noticias en su mail...</p><br> 
             <input type="radio" name="rdio" value="Si" checked> Si<br>
             <input type="radio" name="rdio" value="No" > No<br>
 
             <input class="buttom" name="submit" id="submit" tabindex="5" value="Registrarse" type="submit"> 
-            <h5>Para más información ingrese a...</h5>     <a href="https://www.google.com.ar/">	Ayuda </a> 
+            <h5>Para más información ingrese a...</h5>     <a href="https://www.google.com.ar/">	Ayuda </a><br>
    </form> 
   
 </body>
